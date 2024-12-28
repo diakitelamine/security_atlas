@@ -1,13 +1,13 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="fr">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Artraz - Architecture HTML Template - About Us</title>
+    <title>ATLAS LYNX SECURITE</title>
     <meta name="author" content="Themeholy">
-    <meta name="description" content="Artraz - Architecture HTML Template">
-    <meta name="keywords" content="Artraz - Architecture HTML Template">
+    <meta name="description" content="ATLAS LYNX SECURITE">
+    <meta name="keywords" content="ATLAS LYNX SECURITE">
     <meta name="robots" content="INDEX,FOLLOW">
 
     <!-- Mobile Specific Metas -->
@@ -52,6 +52,11 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .navbar-black {
+            background-color: #000;
+        }
+    </style>
 
 </head>
 
@@ -74,43 +79,31 @@
     <!--==============================
      Preloader
   ==============================-->
-    <div class="preloader  ">
-        <button class="th-btn style3 preloaderCls">Cancel Preloader </button>
-        <div class="preloader-inner">
-            <span class="loader"></span>
-        </div>
+  <div class="preloader  ">
+    <button class="th-btn style3 preloaderCls">Annuler le préchargement</button>
+    <div class="preloader-inner">
+        <span class="loader"></span>
     </div>
-    <div class="th-cursor"></div><!--==============================
+</div>
+<div class="th-cursor"></div><!--==============================
     Mobile Menu
   ============================== -->
   <div class="th-menu-wrapper">
     <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-        
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;"></a>
+        </div>
         <div class="th-mobile-menu">
             <ul>
                 <li class="menu-item-has-children">
-                    <a href="index.html">Page d'accueil</a>
-                    
+                    <a href="index.html">Accueil</a>
                 </li>
                 <li>
-                    <a href="about.html">A propos de nous</a>
+                    <a href="about.html">À Propos</a>
                 </li>
                 <li class="menu-item-has-children">
-                    <a href="service.html">Service</a>
-                    <ul class="sub-menu">
-                        <li><a href="service.html">Service</a></li>
-                        <li><a href="service-details.html">Service Details</a></li>
-                    </ul>
-                </li>
-                
-        
-                <li class="menu-item-has-children">
-                    <a href="#">Blog</a>
-                    <ul class="sub-menu">
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
+                    <a href="service.html">Services</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -119,51 +112,27 @@
         </div>
     </div>
 </div>
-<!--==============================
-Header Area
+    <!--==============================
+	Header Area
+==============================-->
+<header class="th-header navbar-black">
     <div class="sticky-wrapper">
         <div class="sticky-active">
-            <!-- Main Menu Area -->
             <div class="menu-area">
                 <div class="container">
                     <div class="row align-items-center justify-content-between">
-                        
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;"></a>
+                            </div>
+                        </div>
                         <div class="col-auto">
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul>
-                                    <li class="menu-item-has-children">
-                                        <div class="mobile-logo">
-                                            <a href="index.html"><img src="assets/img/logo3.svg" alt="AtLas Lynx SECURITE"></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">A propos de nous </a>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="service.html">Service</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Project</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="project.html">Project</a></li>
-                                            <li><a href="project-details.html">Project Details</a></li>
-                                        </ul>
-                                    </li>
-                                  
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
+                                    <li><a href="index.html">Accueil</a></li>
+                                    <li><a href="about.html">À Propos</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
                             <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
@@ -176,109 +145,135 @@ Header Area
 </header><!--==============================
     Breadcumb
 ============================== -->
-    <div class="container th-container2">
-        <div class="breadcumb-wrapper  " data-bg-src="assets/img/breadcumb/service2.jpg">
-            <h1 class="breadcumb-title">A propos de nous</h1>
-            <ul class="breadcumb-menu">
-                <li><a href="index.html">Page d'accueil</a></li>
-                <li>A propos de nous</li>
-            </ul>
-        </div>
+<div class="container th-container2">
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/breadcumb/breadcumb-bg-2.jpg">
+        <h1 class="breadcumb-title">À Propos</h1>
+        <ul class="breadcumb-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li>À Propos</li>
+        </ul>
     </div>
+</div>
 
     <!--==============================
 About Area  
 ==============================-->
-<!--==============================
+<div class="space-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="img-box3">
+                    <div class="img1">
+                        <img src="assets/img/normal/about_2_1.jpg" alt="À Propos">
+                    </div>
+                    <div class="img2">
+                        <img src="assets/img/normal/about_2_2.jpg" alt="À Propos">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 align-self-center wow fadeInRight" data-wow-delay="0.2s">
+                <span class="big-title mb-35">A.</span>
+                <p class="sub-title">Atlas Lynx Sécurité</p>
+                <h2 class="sec-title mb-40">Votre Sécurité,
+                    <span class="text-theme">Notre Priorité</span>
+                </h2>
+                <p class="mb-4">Atlas Lynx Sécurité est une entreprise de sécurité de premier plan, dédiée à offrir des services de surveillance et de protection de haute qualité. Notre équipe d'experts est formée pour répondre à toutes les situations d'urgence avec professionnalisme et efficacité.</p>
+                <p class="mb-40">Nous utilisons des technologies de pointe pour garantir une protection optimale de vos biens et de vos proches. Faites confiance à Atlas Lynx Sécurité pour assurer votre tranquillité d'esprit.</p>
+                <a href="about.html" class="th-btn"><span class="line left"></span> À Propos <span class="line"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="shape-mockup jump" data-top="-15%" data-right="0"><img src="assets/img/shape/shape_3.png" alt="shape"></div>
+</div><!--==============================
 Testimonial Area  
 ==============================-->
-    <section class="position-relative overflow-hidden space-top">
-        <div class="testi-video-slide th-carousel" id="testiVideo" data-asnavfor="#testiSlide1" data-slide-show="1" data-fade="true">
-            <div>
-                <span class="big-title">VIDEO</span>
-                <div class="testi-video">
-                    <img src="assets/img/testimonial/testi_bg_1_1.jpg" alt="video">
-                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn style2 popup-video"><i class="fas fa-play"></i></a>
-                </div>
-            </div>
-            <div>
-                <span class="big-title">VIDEO</span>
-                <div class="testi-video">
-                    <img src="assets/img/testimonial/testi_bg_1_3.jpg" alt="video">
-                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn style2 popup-video"><i class="fas fa-play"></i></a>
-                </div>
-            </div>
-            <div>
-                <span class="big-title">VIDEO</span>
-                <div class="testi-video">
-                    <img src="assets/img/testimonial/testi_bg_1_3.jpg" alt="video">
-                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn style2 popup-video"><i class="fas fa-play"></i></a>
-                </div>
+<section class="position-relative overflow-hidden space-top">
+    <div class="testi-video-slide th-carousel" id="testiVideo" data-asnavfor="#testiSlide1" data-slide-show="1" data-fade="true">
+        <div>
+            <span class="big-title">VIDÉO</span>
+            <div class="testi-video">
+                <img src="assets/img/testimonial/testi_bg_1_1.jpg" alt="vidéo">
+                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn style2 popup-video"><i class="fas fa-play"></i></a>
             </div>
         </div>
-        <div class="testi-box-area">
-            <div class="testi-box-wrap wow fadeInRight" data-wow-delay="0.2s">
-                <h3 class="text-uppercase mt-n2 mb-30">WHAT <span class="text-transparent">CLIENT'S SAY?</span></h3>
-                <div class="row testi-box-slide th-carousel" id="testiSlide1" data-asnavfor="#testiVideo" data-slide-show="1" data-fade="true">
-                    <div class="col-lg-6">
-                        <div class="testi-box">
-                            <p class="testi-box_text">In mattis molestie iaculis. Nullam sit amet sem risus. Vivamus id ligula dignissim, aliquam elit quis, semper justo. Suspendisse lobortis gravida urna, ut luctus ex interdum sed. Aenean sit amet urna eros. Suspendisse quis felis eu nunc aliquet aliquam. Sed fermentum id purus et mollis. Maecenas non turpis ut magna auctor lacinia.</p>
-                            <div class="testi-box_profile">
-                                <div class="testi-box_img">
-                                    <img src="assets/img/testimonial/testi_1_1.jpg" alt="Avater">
-                                </div>
-                                <div class="testi-box_info">
-                                    <h3 class="testi-box_name">Ricardo Yosef</h3>
-                                    <span class="testi-box_desig">CEO Founder</span>
-                                </div>
-                            </div>
-                            <div class="testi-box_icon">
-                                <img src="assets/img/testimonial/testi_icon_1.svg" alt="icon">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="testi-box">
-                            <p class="testi-box_text">Nullam sit molestie iaculis. Nullam sit amet sem risus. Vivamus id ligula dignissim, aliquam elit quis, semper justo. Suspendisse lobortis gravida urna, ut luctus ex interdum sed. Aenean sit amet urna eros. Suspendisse quis felis eu nunc aliquet aliquam. Sed fermentum id purus et mollis. Maecenas non turpis ut magna auctor mollis.</p>
-                            <div class="testi-box_profile">
-                                <div class="testi-box_img">
-                                    <img src="assets/img/testimonial/testi_1_2.jpg" alt="Avater">
-                                </div>
-                                <div class="testi-box_info">
-                                    <h3 class="testi-box_name">Santino Pedro</h3>
-                                    <span class="testi-box_desig">Bank Manager</span>
-                                </div>
-                            </div>
-                            <div class="testi-box_icon">
-                                <img src="assets/img/testimonial/testi_icon_1.svg" alt="icon">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="testi-box">
-                            <p class="testi-box_text">Id ligula molestie iaculis. Nullam sit amet sem risus. Vivamus id ligula dignissim, aliquam elit quis, semper justo. Suspendisse lobortis gravida urna, ut luctus ex interdum sed. Aenean sit amet urna eros. Suspendisse quis felis eu nunc aliquet aliquam. Sed fermentum id purus et mollis. Maecenas non turpis ut magna auctor turpis.</p>
-                            <div class="testi-box_profile">
-                                <div class="testi-box_img">
-                                    <img src="assets/img/testimonial/testi_1_3.jpg" alt="Avater">
-                                </div>
-                                <div class="testi-box_info">
-                                    <h3 class="testi-box_name">Marcos Manuel </h3>
-                                    <span class="testi-box_desig">CEO Founder</span>
-                                </div>
-                            </div>
-                            <div class="testi-box_icon">
-                                <img src="assets/img/testimonial/testi_icon_1.svg" alt="icon">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="icon-box style1">
-                    <button data-slick-prev="#testiSlide1" class="slick-arrow default"><i class="fat fa-long-arrow-left"></i></button>
-                    <button data-slick-next="#testiSlide1" class="slick-arrow default"><i class="fat fa-long-arrow-right"></i></button>
-                </div>
+        <div>
+            <span class="big-title">VIDÉO</span>
+            <div class="testi-video">
+                <img src="assets/img/testimonial/testi_bg_1_3.jpg" alt="vidéo">
+                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn style2 popup-video"><i class="fas fa-play"></i></a>
             </div>
         </div>
-    </section>
+        <div>
+            <span class="big-title">VIDÉO</span>
+            <div class="testi-video">
+                <img src="assets/img/testimonial/testi_bg_1_3.jpg" alt="vidéo">
+                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn style2 popup-video"><i class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="testi-box-area">
+        <div class="testi-box-wrap wow fadeInRight" data-wow-delay="0.2s">
+            <h3 class="text-uppercase mt-n2 mb-30">CE QUE <span class="text-transparent">DISENT NOS CLIENTS</span></h3>
+            <div class="row testi-box-slide th-carousel" id="testiSlide1" data-asnavfor="#testiVideo" data-slide-show="1" data-fade="true">
+                <div class="col-lg-6">
+                    <div class="testi-box">
+                        <p class="testi-box_text">Atlas Lynx Sécurité a su répondre à nos besoins de sécurité avec professionnalisme et efficacité. Leur équipe est toujours prête à intervenir en cas d'urgence.</p>
+                        <div class="testi-box_profile">
+                            <div class="testi-box_img">
+                                <img src="assets/img/testimonial/testi_1_1.jpg" alt="Avater">
+                            </div>
+                            <div class="testi-box_info">
+                                <h3 class="testi-box_name">Ricardo Yosef</h3>
+                                <span class="testi-box_desig">CEO Founder</span>
+                            </div>
+                        </div>
+                        <div class="testi-box_icon">
+                            <img src="assets/img/testimonial/testi_icon_1.svg" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testi-box">
+                        <p class="testi-box_text">Nous avons fait appel à Atlas Lynx Sécurité pour la surveillance de notre événement et nous avons été très satisfaits de leurs services. Leur équipe est très professionnelle.</p>
+                        <div class="testi-box_profile">
+                            <div class="testi-box_img">
+                                <img src="assets/img/testimonial/testi_1_2.jpg" alt="Avater">
+                            </div>
+                            <div class="testi-box_info">
+                                <h3 class="testi-box_name">Santino Pedro</h3>
+                                <span class="testi-box_desig">Bank Manager</span>
+                            </div>
+                        </div>
+                        <div class="testi-box_icon">
+                            <img src="assets/img/testimonial/testi_icon_1.svg" alt="icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testi-box">
+                        <p class="testi-box_text">La sécurité de notre résidence est assurée par Atlas Lynx Sécurité et nous en sommes très satisfaits. Leur équipe est toujours disponible et réactive.</p>
+                        <div class="testi-box_profile">
+                            <div class="testi-box_img">
+                                <img src="assets/img/testimonial/testi_1_3.jpg" alt="Avater">
+                            </div>
+                            <div class="testi-box_info">
+                                <h3 class="testi-box_name">Marcos Manuel </h3>
+                                <span class="testi-box_desig">CEO Founder</span>
+                            </div>
+                        </div>
+                        <div class="testi-box_icon">
+                            <img src="assets/img/testimonial/testi_icon_1.svg" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-box style1">
+                <button data-slick-prev="#testiSlide1" class="slick-arrow default"><i class="fat fa-long-arrow-left"></i></button>
+                <button data-slick-next="#testiSlide1" class="slick-arrow default"><i class="fat fa-long-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
     <!--==============================
 Team Area  
 ==============================-->
@@ -430,76 +425,73 @@ Counter Area
                 </div>
             </div>
         </div>
-    </section><!--==============================
-Footer Area
-==============================-->
-    <footer class="footer-wrapper footer-layout4">
-        <div class="widget-area">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-lg-6 col-xl-auto wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="widget footer-widget">
-                            <div class="footer-logo">
-                                <img src="assets/img/logo3.svg" alt="Artraz">
-                            </div>
-                            <div class="th-widget-about">
-                                <p class="footer-text">Nous assurons la sécurité avec excellence et professionnalisme. Faites confiance à Atlas Lynx Sécurité pour tous vos besoins en matière de protection.</p>
-                                <h6 class="text-theme mb-2">Réseaux sociaux :</h6>
-                                <div class="th-social">
-                                    <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                                    <a target="_blank" href="https://skype.com/"><i class="fab fa-skype"></i></a>
-                                    <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                                </div>
+    </section>
+<footer class="footer-wrapper footer-layout4">
+    <div class="widget-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-6 col-xl-auto wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="widget footer-widget">
+                        <div class="footer-logo">
+                            <img src="assets/img/logo-small" alt="Atlas Lynx Sécurité">
+                        </div>
+                        <div class="th-widget-about">
+                            <p class="footer-text">Développez commodément une valeur percutante sans applications de nouvelle génération. Stratégisez progressivement des initiatives omniprésentes après avoir avancé des ressources.</p>
+                            <h6 class="text-theme mb-2">Réseau social :</h6>
+                            <div class="th-social">
+                                <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://skype.com/"><i class="fab fa-skype"></i></a>
+                                <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-auto wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="widget widget_nav_menu footer-widget style2">
-                            <h3 class="widget_title">Services</h3>
-                            <div class="menu-all-pages-container">
-                                <div class="list-two-column">
-                                    <ul class="menu">
-                                        <li><a href="service-details.html">Surveillance</a></li>
-                                        <li><a href="service-details.html">>Protection rapprochée</a></li>
-                                        <li><a href="service-details.html">Intervention rapide</a></li>
-                                        <li><a href="service-details.html">Contrôle d'accès</a></li>
-                                        <li><a href="service-details.html">Sécurité événementielle</a></li>
-                                    </ul>
-                                    
-                                </div>
+                </div>
+                <div class="col-lg-6 col-xl-auto wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="widget widget_nav_menu footer-widget style2">
+                        <h3 class="widget_title">Services</h3>
+                        <div class="menu-all-pages-container">
+                            <div class="list-two-column">
+                                <ul class="menu">
+                                    <li><a href="service-details.html">Surveillance</a></li>
+                                    <li><a href="service-details.html">Sécurité des événements</a></li>
+                                    <li><a href="service-details.html">Sécurité résidentielle</a></li>
+                                    <li><a href="service-details.html">Sécurité commerciale</a></li>
+                                    <li><a href="service-details.html">Consultation en sécurité</a></li>
+                                    <li><a href="service-details.html">Formation en sécurité</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-xl-auto wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="widget footer-widget style2">
-                            <h3 class="widget_title">Contactez-nous</h3>
-                            <div class="th-widget-contact">
-                                <div class="info-box">
-                                    <div class="info-box_icon">
-                                        <i class="fal fa-location-dot"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <span class="info-box_label">Adresse de l'entreprise</span>
-                                        <p class="info-box_text">34 RUE DE PIERRE 35000 RENNES</p>
-                                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-auto wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="widget footer-widget style2">
+                        <h3 class="widget_title">Contactez-nous</h3>
+                        <div class="th-widget-contact">
+                            <div class="info-box">
+                                <div class="info-box_icon">
+                                    <i class="fal fa-location-dot"></i>
                                 </div>
-                                <div class="info-box">
-                                    <div class="info-box_icon">
-                                        <i class="fal fa-phone"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <span class="info-box_label">Numéro de Télephone</span>
-                                        <a href="tel:+11234567890" class="info-box_link">+(33) 123 456 7890</a>
-                                    </div>
+                                <div class="media-body">
+                                    <span class="info-box_label">Adresse du bureau</span>
+                                    <p class="info-box_text">33 Avenue de constellation 35000 RENNES</p>
                                 </div>
-                                <div class="info-box">
-                                    <div class="info-box_icon">
-                                        <i class="fal fa-envelope"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <span class="info-box_label">Email Address</span>
-                                        <a href="mailto:info@artraz.com" class="info-box_link">info@artraz.com</a>
-                                    </div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box_icon">
+                                    <i class="fal fa-phone"></i>
+                                </div>
+                                <div class="media-body">
+                                    <span class="info-box_label">Numéro de téléphone</span>
+                                    <a href="tel:+11234567890" class="info-box_link">+(33) 123 456 7890</a>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <div class="info-box_icon">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="media-body">
+                                    <span class="info-box_label">Adresse e-mail</span>
+                                    <a href="mailto:contact@atlaslynx-securite.fr" class="info-box_link">contact@atlaslynx-securite.fr</a>
                                 </div>
                             </div>
                         </div>
@@ -507,12 +499,14 @@ Footer Area
                 </div>
             </div>
         </div>
-        <div class="copyright-wrap">
-            <div class="container">
-                <p class="copyright-text text-center">&copy; 2024 Atlas Lynx Sécurité. Tous droits réservés.<a href="index.html">Atlas Lynx Sécurité</a> - 2024</p>
-            </div>
+    </div>
+    <div class="copyright-wrap">
+        <div class="container">
+            <p class="copyright-text text-center">Copyright By © <a href="index.html">Atlas Lynx Sécurité</a> - 2024</p>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
 
 
