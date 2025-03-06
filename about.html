@@ -56,6 +56,18 @@
         .navbar-black {
             background-color: #000;
         }
+        .navbar-black {
+            background-color: #000 !important;
+        }
+        .sticky-active {
+            background-color: #000 !important;
+        }
+        .header-layout1.sticky-active {
+            background-color: #000 !important;
+        }
+        .main-menu > ul > li > a {
+            color: #fff !important;
+        }
     </style>
 
 </head>
@@ -91,8 +103,8 @@
   <div class="th-menu-wrapper navbar-black">
     <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-        <div class="header-logo">
-            <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;"></a>
+        <div class="mobile-logo">
+            <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas lynx SECURITE"></a>
         </div>
         <div class="th-mobile-menu">
             <ul>
@@ -104,6 +116,13 @@
                 </li>
                 <li class="menu-item-has-children">
                     <a href="service.html">Services</a>
+                    <ul class="sub-menu">
+                        <li><a href="surveillance_gardiennage.html">Gardiennage et surveillance humaine</a></li>
+                        <li><a href="incendie.html">Sécurité incendie</a></li>
+                        <li><a href="evenementiel.html">Événementiel et contrôle d'accès</a></li>
+                        <li><a href="protection_rapproche.html">Protection rapprochée</a></li>
+                        <li><a href="mobile.html">Sécurité mobile et interventions rapides</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -131,7 +150,15 @@
                                 <ul>
                                     <li><a href="index.html">Accueil</a></li>
                                     <li><a href="about.html">À Propos</a></li>
-                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="service.html">Services</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="surveillance_gardiennage.html">Gardiennage et surveillance humaine</a></li>
+                                            <li><a href="incendie.html">Sécurité incendie</a></li>
+                                            <li><a href="evenementiel.html">Événementiel et contrôle d’accès</a></li>
+                                            <li><a href="protection_rapproche.html">Protection rapprochée</a></li>
+                                            <li><a href="mobile.html">Sécurité mobile et interventions rapides</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </nav>
@@ -145,114 +172,272 @@
 </header><!--==============================
     Breadcumb
 ============================== -->
-
-    <!--==============================
-About Area  
-==============================-->
-<div class="space-top" style="padding-bottom: 50px; font-family: Arial, sans-serif; color: #f5f5f5;">
+<!-- <div class="breadcumb-wrapper" style="background-color: #1a1a1a;">
     <div class="container">
-        <div class="wow fadeInRight" data-wow-delay="0.2s" style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <!-- Sous-titre -->
-            <h1 class="text-theme">Atlas Lynx Sécurité</h1>
-            
-            <!-- Titre principal -->
-            <h3 class="text-theme" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; color: #fff;">
-                Votre Sérénité, 
-                <span class="text-theme">Notre Priorité</span>
-            </h3>
-            
-            <!-- Paragraphe d'introduction -->
-            <p class="mb-4" style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                Chez <strong style="color: #fff;">Atlas Lynx Sécurité</strong>, nous savons que votre sécurité n’est pas une option. C’est une nécessité.
-            </p>
-            
-            <!-- Paragraphe sur la mission -->
-            <p class="mb-4" style="font-size: 1.2rem; line-height: 1.8; color: #fff">
-                Notre mission ? <strong style="color: #fff;">Protéger ce qui compte le plus pour vous</strong> : vos biens, vos proches et votre tranquillité d’esprit.
-            </p>
-            
-            <!-- Services proposés -->
-            <p class="mb-4" style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                Forts de notre expertise et de notre engagement, nous proposons des solutions de sécurité sur mesure adaptées à vos besoins spécifiques. Grâce à des technologies de pointe et à des professionnels hautement qualifiés, nous garantissons une protection optimale, 24 heures sur 24, 7 jours sur 7.
-            </p>
-            
-            <!-- Détails supplémentaires -->
-            <p class="mb-4" style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                Nos services incluent une large gamme de solutions allant de la surveillance humaine au contrôle d’accès, en passant par la protection rapprochée. Nous veillons à sécuriser vos événements, gérer vos risques et intervenir rapidement en cas d’urgence.
-            </p>
-            
-            <!-- Pourquoi choisir -->
-            <h3 class="text-theme">Pourquoi choisir Atlas Lynx Sécurité ?</h3>
-            
-            <!-- Liste des avantages -->
-            <ul class="mb-4" style="text-align: left; margin: 0 auto;  font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                <li style="font-size: 1.2rem; line-height: 1.8; color: #fff;"><strong class="text-theme mb-4">Professionnalisme :</strong> Notre équipe est formée et certifiée pour répondre à toutes les situations avec rigueur.</li>
-                <li style="font-size: 1.2rem; line-height: 1.8; color: #fff;"><strong class="text-theme mb-4">Technologie avancée :</strong> Nous utilisons des équipements modernes pour une surveillance efficace.</li>
-                <li style="font-size: 1.2rem; line-height: 1.8; color: #fff;"><strong class="text-theme mb-4">Flexibilité :</strong> Nos solutions s’adaptent aux besoins spécifiques de chaque client.</li>
-                <li style="font-size: 1.2rem; line-height: 1.8; color: #fff;"><strong class="text-theme mb-4">Disponibilité :</strong> Nous sommes opérationnels 24h/24 et 7j/7 pour garantir votre sécurité.</li>
+        <div class="breadcumb-content">
+            <h1 class="breadcumb-title" style="color: #f5f5f5;">À Propos</h1>
+            <ul class="breadcumb-menu">
+                <li><a href="index.html" style="color: #ffc107;">Accueil</a></li>
+                <li style="color: #f5f5f5;">À Propos</li>
             </ul>
-            
-            <!-- Localisation -->
-            <p class="mb-40" style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                Basés à Rennes, nous intervenons dans toute la région pour vous accompagner efficacement. Faites de votre sécurité une priorité en choisissant un partenaire de confiance.
-            </p>
-            
-            
-            <!-- Bouton -->
-            <a href="about.html" class="th-btn"><span class="line left"></span> En Savoir Plus <span class="line"></span></a>
         </div>
     </div>
-</div>
+</div> -->
 
-<!-- Footer -->
-<footer class="footer-wrapper footer-layout4 navbar-black">
-    <div class="widget-area" style="margin-top: 50px;">
-        <div class="container">
-            <div class="row">
-                <!-- Services -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="widget widget_nav_menu footer-widget style2">
-                        <h3 class="widget_title" style="color: #fff;">Services</h3>
-                        <div class="menu-all-pages-container">
-                            <ul class="menu" style="color: #ccc;">
-                                <li><a href="surveillance_gardiennage.html" style="color: #ccc;">Gardiennage et surveillance humaine</a></li>
-                                <li><a href="incendie.html" style="color: #ccc;">Sécurité incendie</a></li>
-                                <li><a href="evenementiel.html" style="color: #ccc;">Événementiel et contrôle d’accès</a></li>
-                                <li><a href="protection_rapproche.html" style="color: #ccc;">Protection rapprochée</a></li>
-                                <li><a href="mobile.html" style="color: #ccc;">Sécurité mobile et interventions rapides</a></li>
+<!--==============================
+About Area  
+==============================-->
+<section class="space">
+    <div class="container">
+        <div class="space-top" style="padding: 80px 0; background-color: #1a1a1a; font-family: Arial, sans-serif;">
+            <div class="container">
+                <!-- En-tête -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <h1 class="text-theme mb-4" style="color: #ffc107; font-size: 2.5rem;">À Propos d'Atlas Lynx Sécurité</h1>
+                        <p class="mb-5" style="color: #f5f5f5; font-size: 1.1rem; line-height: 1.6;">
+                            Atlas Lynx Sécurité est votre partenaire de confiance en matière de sécurité. Notre engagement est de fournir des solutions de sécurité sur mesure qui répondent précisément à vos besoins, avec un professionnalisme et une fiabilité sans faille.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Notre Mission -->
+                <div class="row mb-5">
+                    <div class="col-lg-4 mb-4">
+                        <div class="service-card" style="background-color: #222; border-radius: 10px; padding: 30px; height: 100%;">
+                            <i class="fas fa-shield-alt mb-4" style="color: #ffc107; font-size: 2.5rem;"></i>
+                            <h3 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 15px;">Notre Mission</h3>
+                            <ul style="list-style: none; padding: 0; color: #f5f5f5;">
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Protection des biens et des personnes</li>
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Solutions de sécurité personnalisées</li>
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Surveillance 24/7</li>
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Intervention rapide</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="service-card" style="background-color: #222; border-radius: 10px; padding: 30px; height: 100%;">
+                            <i class="fas fa-users mb-4" style="color: #ffc107; font-size: 2.5rem;"></i>
+                            <h3 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 15px;">Notre Équipe</h3>
+                            <ul style="list-style: none; padding: 0; color: #f5f5f5;">
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Agents qualifiés et formés</li>
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Professionnalisme exemplaire</li>
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Formation continue</li>
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Expérience terrain</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="service-card" style="background-color: #222; border-radius: 10px; padding: 30px; height: 100%;">
+                            <i class="fas fa-star mb-4" style="color: #ffc107; font-size: 2.5rem;"></i>
+                            <h3 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 15px;">Nos Valeurs</h3>
+                            <ul style="list-style: none; padding: 0; color: #f5f5f5;">
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Intégrité et fiabilité</li>
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Excellence opérationnelle</li>
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Innovation continue</li>
+                                <li class="mb-3"><i class="fas fa-check me-2" style="color: #ffc107;"></i>Satisfaction client</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Contactez-nous -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="widget footer-widget style2">
-                        <h3 class="widget_title" style="color: #fff;">Contactez-nous</h3>
-                        <div class="th-widget-contact">
-                            <p style="color: #ccc;">Adresse : 01 Avenue de la Forêt, 35340 Liffré</p>
-                            <p style="color: #ccc;">Téléphone : +(33) 07 68 92 21 25</p>
-                            <p style="color: #ccc;">E-mail : <a href="mailto:contact@atlaslynx-securite.fr" style="color: #007BFF;">contact@atlaslynx-securite.fr</a></p>
+
+                <!-- Nos Services -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div style="background-color: #222; border-radius: 10px; padding: 40px;">
+                            <h2 class="text-center mb-4" style="color: #ffc107; font-size: 2rem;">Nos Services</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-shield-alt me-3" style="color: #ffc107; font-size: 1.5rem;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107;">Gardiennage et Surveillance</h4>
+                                            <p style="color: #f5f5f5;">Protection continue de vos locaux et biens</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-fire-extinguisher me-3" style="color: #ffc107; font-size: 1.5rem;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107;">Sécurité Incendie</h4>
+                                            <p style="color: #f5f5f5;">Prévention et intervention incendie</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-user-shield me-3" style="color: #ffc107; font-size: 1.5rem;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107;">Protection Rapprochée</h4>
+                                            <p style="color: #f5f5f5;">Protection personnalisée pour votre sécurité</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-calendar-check me-3" style="color: #ffc107; font-size: 1.5rem;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107;">Événementiel</h4>
+                                            <p style="color: #f5f5f5;">Sécurisation complète de vos événements</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Entreprise -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="widget footer-widget style2">
-                        <h3 class="widget_title" style="color: #fff;">Entreprise</h3>
-                        <div class="th-widget-contact">
-                            <p style="color: #ccc;">Siret : 852 708 791 00037</p>
-                            <p style="color: #ccc;">Autorisation : AUT-035-2123-12-03-2024960605</p>
-                            <p style="color: #ccc;">Disponibilité : 24h/24, 7j/7</p>
+
+                <!-- Notre Engagement -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div style="background-color: #222; border-radius: 10px; padding: 40px;">
+                            <h2 class="text-center mb-4" style="color: #ffc107; font-size: 2rem;">Notre Engagement</h2>
+                            <div class="row text-center">
+                                <div class="col-md-4 mb-4">
+                                    <i class="fas fa-clock mb-3" style="color: #ffc107; font-size: 2rem;"></i>
+                                    <h4 style="color: #ffc107;">Disponibilité 24/7</h4>
+                                    <p style="color: #f5f5f5;">Une équipe à votre service jour et nuit</p>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <i class="fas fa-handshake mb-3" style="color: #ffc107; font-size: 2rem;"></i>
+                                    <h4 style="color: #ffc107;">Professionnalisme</h4>
+                                    <p style="color: #f5f5f5;">Des agents hautement qualifiés</p>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <i class="fas fa-chart-line mb-3" style="color: #ffc107; font-size: 2rem;"></i>
+                                    <h4 style="color: #ffc107;">Excellence</h4>
+                                    <p style="color: #f5f5f5;">Des services de qualité supérieure</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="copyright-wrap" style="background-color: #222; padding: 15px 0; text-align: center; color: #ccc;">
-        <p class="copyright-text">Copyright By © <a href="index.html" style="color: #007BFF;">Atlas Lynx Sécurité</a> - 2024</p>
+</section>
+
+<!--==============================
+    Footer Area
+==============================-->
+<footer class="footer-area" style="background-color: #000; color: #f5f5f5; padding: 80px 0 20px; font-family: Arial, sans-serif;">
+    <div class="container">
+        <div class="row justify-content-between">
+            <!-- Company Info -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="footer-info">
+                    <div class="footer-logo mb-4">
+                        <img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entreprise -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Entreprise</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">SIRET :</strong><br>
+                        852 708 791 00037
+                    </li>
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">Autorisation :</strong><br>
+                        AUT-035-2123-12-03-2024960605
+                    </li>
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">Disponibilité :</strong><br>
+                        24h/24, 7j/7
+                    </li>
+                </ul>
+                <div class="social-links mt-4">
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="Facebook">
+                        <i class="fab fa-facebook-f" style="color: #ffc107;"></i>
+                    </a>
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="Instagram">
+                        <i class="fab fa-instagram" style="color: #ffc107;"></i>
+                    </a>
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="TikTok">
+                        <i class="fab fa-tiktok" style="color: #ffc107;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services Links -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Services</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">
+                        <a href="surveillance_gardiennage.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Gardiennage et surveillance humaine
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="incendie.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Sécurité incendie
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="evenementiel.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Événementiel et contrôle d'accès
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="protection_rapproche.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Protection rapprochée
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="mobile.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Sécurité mobile et interventions rapides
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Contact</h4>
+                <ul class="footer-contact" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px; display: flex; align-items: start;">
+                        <i class="fas fa-map-marker-alt" style="color: #ffc107; width: 20px; margin-right: 10px; margin-top: 5px;"></i>
+                        <span style="color: #f5f5f5; line-height: 1.6;">123 Rue de la Sécurité<br>75000 Paris</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="tel:+33123456789" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-phone" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                            +33 1 23 45 67 89
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="mailto:contact@atlaslynx.fr" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-envelope" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                            contact@atlaslynx.fr
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <i class="fas fa-clock" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                        <span style="color: #f5f5f5;">Disponible 24/7</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="copyright" style="text-align: center; padding-top: 20px; border-top: 1px solid #333;">
+                    <p style="color: #f5f5f5; margin: 0; font-size: 0.9rem;">
+                        &copy; 2024 Atlas Lynx Sécurité. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 

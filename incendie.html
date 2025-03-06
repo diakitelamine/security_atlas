@@ -56,6 +56,18 @@
         .navbar-black {
             background-color: #000;
         }
+        .navbar-black {
+            background-color: #000 !important;
+        }
+        .sticky-active {
+            background-color: #000 !important;
+        }
+        .header-layout1.sticky-active {
+            background-color: #000 !important;
+        }
+        .main-menu > ul > li > a {
+            color: #fff !important;
+        }
     </style>
 
 </head>
@@ -89,221 +101,390 @@
     Mobile Menu
   ============================== -->
   <div class="th-menu-wrapper navbar-black">
-    <div class="th-menu-area text-center">
-        <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-        <div class="header-logo">
-            <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;"></a>
-        </div>
-        <div class="th-mobile-menu">
-            <ul>
-                <li class="menu-item-has-children">
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="about.html">À Propos</a>
-                </li>
-                <li class="menu-item-has-children">
-                    <a href="service.html">Services</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
+        <div class="th-menu-area text-center">
+            <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas lynx SECURITE"></a>
+            </div>
+            <div class="th-mobile-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="about.html">A propos de nous</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="service.html">Service</a>
+                        <ul class="sub-menu">
+                            <li><a href="surveillance_gardiennage.html">Gardiennage et surveillance humaine</a></li>
+                            <li><a href="incendie.html">Sécurité incendie</a></li>
+                            <li><a href="evenementiel.html">Événementiel et contrôle d'accès</a></li>
+                            <li><a href="protection_rapproche.html">Protection rapprochée</a></li>
+                            <li><a href="mobile.html">Sécurité mobile et interventions rapides</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
     <!--==============================
 	Header Area
 ==============================-->
 <header class="th-header navbar-black">
-    <div class="sticky-wrapper">
-        <div class="sticky-active">
-            <div class="menu-area">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
-                            <div class="header-logo">
-                                <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;"></a>
+        <div class="sticky-wrapper">
+            <div class="sticky-active">
+                <!-- Main Menu Area -->
+                <div class="menu-area">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-auto">
+                                <div class="header-logo">
+                                    <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;"></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-auto">
-                            <nav class="main-menu d-none d-lg-inline-block">
-                                <ul>
-                                    <li><a href="index.html">Accueil</a></li>
-                                    <li><a href="about.html">À Propos</a></li>
-                                    <li><a href="service.html">Services</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                            <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
+                            <div class="col-auto">
+                                <nav class="main-menu d-none d-lg-inline-block">
+                                    <ul>
+                                        <li><a href="index.html">Accueil</a></li>
+                                        <li><a href="about.html">À Propos</a></li>
+                                        <li class="menu-item-has-children">
+                                            <a href="service.html">Services</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="surveillance_gardiennage.html">Gardiennage et surveillance humaine</a></li>
+                                                <li><a href="incendie.html">Sécurité incendie</a></li>
+                                                <li><a href="evenementiel.html">Événementiel et contrôle d'accès</a></li>
+                                                <li><a href="protection_rapproche.html">Protection rapprochée</a></li>
+                                                <li><a href="mobile.html">Sécurité mobile et interventions rapides</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header><!--==============================
+    </header><!--==============================
     Breadcumb
 ============================== -->
 
     <!--==============================
 About Area  
 ==============================-->
-<div class="space-top" style="padding-bottom: 50px; font-family: Arial, sans-serif; color: #f5f5f5;">
+<section class="space">
     <div class="container">
-        <div class="wow fadeInRight" data-wow-delay="0.2s" style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <!-- Sous-titre -->
-            <h1 class="text-theme">Atlas Lynx Sécurité</h1>
-            
-            <!-- Titre principal -->
-            <h3 class="text-theme" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; color: #fff;">
-                Sécurité <span class="text-theme">Incendie</span>
-            </h3>
-            
-            <!-- Introduction -->
-            <p class="mb-4" style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                Chez <strong style="color: #fff;">Atlas Lynx Sécurité</strong>, la protection contre les incendies est une priorité essentielle. Nos agents spécialisés en sécurité incendie sont formés pour assurer la prévention, la surveillance et l’intervention rapide en cas de danger.
-            </p>
-            
-            <!-- Section 1 -->
-            <h4 style="color: #f5f5f5; font-size: 1.8rem; margin-bottom: 15px;">1. Prévention et inspection des risques</h4>
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                La meilleure façon de lutter contre les incendies est de les prévenir. Nos agents inspectent régulièrement vos locaux pour identifier les sources potentielles de risques et veiller au respect des normes de sécurité.
-            </p>
-            
-            <!-- Section 2 -->
-            <h4 style="color: #f5f5f5; font-size: 1.8rem; margin-bottom: 15px;">2. Surveillance des dispositifs de sécurité</h4>
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                Nos agents contrôlent et maintiennent les systèmes de protection incendie, tels que les extincteurs, les alarmes incendie et les sprinklers, pour garantir leur bon fonctionnement en cas de besoin.
-            </p>
-            
-            <!-- Section 3 -->
-            <h4 style="color: #f5f5f5; font-size: 1.8rem; margin-bottom: 15px;">3. Rondes de prévention incendie</h4>
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                Nos agents effectuent des rondes préventives pour surveiller les zones à risques et détecter toute anomalie susceptible de provoquer un départ de feu.
-            </p>
-            
-            <!-- Section 4 -->
-            <h4 style="color: #f5f5f5; font-size: 1.8rem; margin-bottom: 15px;">4. Intervention rapide en cas d’incident</h4>
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                En cas de départ de feu, nos agents interviennent immédiatement pour contenir l’incendie, évacuer les personnes et alerter les secours externes si nécessaire.
-            </p>
-            
-            <!-- Section 5 -->
-            <h4 style="color: #f5f5f5; font-size: 1.8rem; margin-bottom: 15px;">5. Gestion des évacuations</h4>
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                En situation de crise, nos agents assurent l’évacuation ordonnée des occupants et guident les personnes vers les issues de secours conformément aux plans d’évacuation.
-            </p>
-            
-            <!-- Section 6 -->
-            <h4 style="color: #f5f5f5; font-size: 1.8rem; margin-bottom: 15px;">6. Formation en sécurité incendie</h4>
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                Nous proposons des formations personnalisées pour sensibiliser votre personnel aux risques incendie et leur apprendre les bons réflexes en cas d’incident.
-            </p>
-            
-            <!-- Conclusion -->
-            <p class="mb-4" style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
-                Faites confiance à <strong style="color: #fff;">Atlas Lynx Sécurité</strong> pour une protection incendie optimale et préventive. Contactez-nous pour évaluer vos besoins et bénéficier de solutions adaptées.
-            </p>
+        <div class="space-top" style="padding: 80px 0; background-color: #1a1a1a; font-family: Arial, sans-serif;">
+            <div class="container">
+                <!-- En-tête -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <h1 class="text-theme mb-4" style="color: #ffc107; font-size: 2.5rem;">Sécurité Incendie</h1>
+                        <p class="mb-5" style="color: #f5f5f5; font-size: 1.1rem; line-height: 1.6;">
+                            Atlas Lynx Sécurité assure la protection de vos établissements contre les risques d'incendie. Nos agents SSIAP qualifiés garantissent une surveillance préventive et une intervention rapide en cas d'urgence.
+                        </p>
+                    </div>
+                </div>
 
-            <!-- Bouton -->
-            <a href="about.html" class="th-btn"><span class="line left"></span> En Savoir Plus <span class="line"></span></a>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Footer -->
-<footer class="footer-wrapper footer-layout4 navbar-black">
-    <div class="widget-area" style="margin-top: 50px;">
-        <div class="container">
-            <div class="row">
-                <!-- Services -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="widget widget_nav_menu footer-widget style2">
-                        <h3 class="widget_title" style="color: #fff;">Services</h3>
-                        <div class="menu-all-pages-container">
-                            <ul class="menu" style="color: #ccc;">
-                                <li><a href="surveillance_gardiennage.html" style="color: #ccc;">Gardiennage et surveillance humaine</a></li>
-                                <li><a href="incendie.html" style="color: #ccc;">Sécurité incendie</a></li>
-                                <li><a href="evenementiel.html" style="color: #ccc;">Événementiel et contrôle d’accès</a></li>
-                                <li><a href="protection_rapproche.html" style="color: #ccc;">Protection rapprochée</a></li>
-                                <li><a href="mobile.html" style="color: #ccc;">Sécurité mobile et interventions rapides</a></li>
+                <!-- Services de Sécurité Incendie -->
+                <div class="row mb-5">
+                    <div class="col-lg-4 mb-4">
+                        <div class="service-card" style="background-color: #222; border-radius: 10px; padding: 30px; height: 100%;">
+                            <i class="fas fa-fire-extinguisher mb-4" style="color: #ffc107; font-size: 2.5rem;"></i>
+                            <h3 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 15px;">Prévention Incendie</h3>
+                            <ul style="list-style: none; padding: 0; color: #f5f5f5;">
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: #ffc107; margin-right: 10px;"></i>Rondes de prévention</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: #ffc107; margin-right: 10px;"></i>Vérification des équipements</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: #ffc107; margin-right: 10px;"></i>Contrôle des accès de secours</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="service-card" style="background-color: #222; border-radius: 10px; padding: 30px; height: 100%;">
+                            <i class="fas fa-user-shield mb-4" style="color: #ffc107; font-size: 2.5rem;"></i>
+                            <h3 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 15px;">Agents SSIAP</h3>
+                            <ul style="list-style: none; padding: 0; color: #f5f5f5;">
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: #ffc107; margin-right: 10px;"></i>SSIAP 1, 2 et 3</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: #ffc107; margin-right: 10px;"></i>Formation continue</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: #ffc107; margin-right: 10px;"></i>Expérience terrain</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="service-card" style="background-color: #222; border-radius: 10px; padding: 30px; height: 100%;">
+                            <i class="fas fa-clipboard-list mb-4" style="color: #ffc107; font-size: 2.5rem;"></i>
+                            <h3 style="color: #ffc107; font-size: 1.4rem; margin-bottom: 15px;">Gestion de Crise</h3>
+                            <ul style="list-style: none; padding: 0; color: #f5f5f5;">
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: #ffc107; margin-right: 10px;"></i>Procédures d'évacuation</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: #ffc107; margin-right: 10px;"></i>Coordination des secours</li>
+                                <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: #ffc107; margin-right: 10px;"></i>Gestion post-incident</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Contactez-nous -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="widget footer-widget style2">
-                        <h3 class="widget_title" style="color: #fff;">Contactez-nous</h3>
-                        <div class="th-widget-contact">
-                            <p style="color: #ccc;">Adresse : 01 Avenue de la Forêt, 35340 Liffré</p>
-                            <p style="color: #ccc;">Téléphone : +(33) 07 68 92 21 25</p>
-                            <p style="color: #ccc;">E-mail : <a href="mailto:contact@atlaslynx-securite.fr" style="color: #007BFF;">contact@atlaslynx-securite.fr</a></p>
+
+                <!-- Types d'Établissements -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div style="background-color: #222; border-radius: 10px; padding: 40px;">
+                            <h2 class="text-center mb-4" style="color: #ffc107; font-size: 2rem;">Types d'Établissements</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-building me-3" style="color: #ffc107; font-size: 1.5rem; margin-top: 5px;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107; font-size: 1.2rem;">ERP</h4>
+                                            <p style="color: #f5f5f5;">Établissements Recevant du Public de toutes catégories</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-industry me-3" style="color: #ffc107; font-size: 1.5rem; margin-top: 5px;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107; font-size: 1.2rem;">Sites Industriels</h4>
+                                            <p style="color: #f5f5f5;">Usines, entrepôts et zones de stockage</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-hotel me-3" style="color: #ffc107; font-size: 1.5rem; margin-top: 5px;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107; font-size: 1.2rem;">Hôtels</h4>
+                                            <p style="color: #f5f5f5;">Établissements d'hébergement et résidences</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-shopping-cart me-3" style="color: #ffc107; font-size: 1.5rem; margin-top: 5px;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107; font-size: 1.2rem;">Centres Commerciaux</h4>
+                                            <p style="color: #f5f5f5;">Grands magasins et galeries marchandes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Entreprise -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="widget footer-widget style2">
-                        <h3 class="widget_title" style="color: #fff;">Entreprise</h3>
-                        <div class="th-widget-contact">
-                            <p style="color: #ccc;">Siret : 852 708 791 00037</p>
-                            <p style="color: #ccc;">Autorisation : AUT-035-2123-12-03-2024960605</p>
-                            <p style="color: #ccc;">Disponibilité : 24h/24, 7j/7</p>
+
+                <!-- Nos Certifications -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-10">
+                        <div style="background-color: #222; border-radius: 10px; padding: 40px;">
+                            <h2 class="text-center mb-4" style="color: #ffc107; font-size: 2rem;">Nos Certifications</h2>
+                            <div class="row text-center">
+                                <div class="col-md-4 mb-4">
+                                    <i class="fas fa-certificate mb-3" style="color: #ffc107; font-size: 2rem;"></i>
+                                    <h4 style="color: #ffc107; font-size: 1.2rem;">SSIAP 1</h4>
+                                    <p style="color: #f5f5f5;">Agent de Service de Sécurité Incendie</p>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <i class="fas fa-award mb-3" style="color: #ffc107; font-size: 2rem;"></i>
+                                    <h4 style="color: #ffc107; font-size: 1.2rem;">SSIAP 2</h4>
+                                    <p style="color: #f5f5f5;">Chef d'Équipe de Sécurité Incendie</p>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <i class="fas fa-star mb-3" style="color: #ffc107; font-size: 2rem;"></i>
+                                    <h4 style="color: #ffc107; font-size: 1.2rem;">SSIAP 3</h4>
+                                    <p style="color: #f5f5f5;">Chef de Service de Sécurité Incendie</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Réglementation -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div style="background-color: #222; border-radius: 10px; padding: 40px;">
+                            <h2 class="text-center mb-4" style="color: #ffc107; font-size: 2rem;">Réglementation</h2>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-book me-3" style="color: #ffc107; font-size: 1.5rem; margin-top: 5px;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107; font-size: 1.2rem;">Code du Travail</h4>
+                                            <p style="color: #f5f5f5;">Respect des normes de sécurité au travail</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="d-flex align-items-start">
+                                        <i class="fas fa-file-alt me-3" style="color: #ffc107; font-size: 1.5rem; margin-top: 5px;"></i>
+                                        <div>
+                                            <h4 style="color: #ffc107; font-size: 1.2rem;">Règlement ERP</h4>
+                                            <p style="color: #f5f5f5;">Application des normes de sécurité incendie</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="copyright-wrap" style="background-color: #222; padding: 15px 0; text-align: center; color: #ccc;">
-        <p class="copyright-text">Copyright By © <a href="index.html" style="color: #007BFF;">Atlas Lynx Sécurité</a> - 2024</p>
+    </section>
+
+<!--==============================
+    Footer Area
+==============================-->
+<footer class="footer-area" style="background-color: #000; color: #f5f5f5; padding: 80px 0 20px; font-family: Arial, sans-serif;">
+    <div class="container">
+        <div class="row justify-content-between">
+            <!-- Company Info -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="footer-info">
+                    <div class="footer-logo mb-4">
+                        <img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entreprise -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Entreprise</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">SIRET :</strong><br>
+                        852 708 791 00037
+                    </li>
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">Autorisation :</strong><br>
+                        AUT-035-2123-12-03-2024960605
+                    </li>
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">Disponibilité :</strong><br>
+                        24h/24, 7j/7
+                    </li>
+                </ul>
+                <div class="social-links mt-4">
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="Facebook">
+                        <i class="fab fa-facebook-f" style="color: #ffc107;"></i>
+                    </a>
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="Instagram">
+                        <i class="fab fa-instagram" style="color: #ffc107;"></i>
+                    </a>
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="TikTok">
+                        <i class="fab fa-tiktok" style="color: #ffc107;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services Links -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Services</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">
+                        <a href="surveillance_gardiennage.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Gardiennage et surveillance humaine
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="incendie.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Sécurité incendie
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="evenementiel.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Événementiel et contrôle d'accès
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="protection_rapproche.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Protection rapprochée
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="mobile.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Sécurité mobile et interventions rapides
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Contact</h4>
+                <ul class="footer-contact" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px; display: flex; align-items: start;">
+                        <i class="fas fa-map-marker-alt" style="color: #ffc107; width: 20px; margin-right: 10px; margin-top: 5px;"></i>
+                        <span style="color: #f5f5f5; line-height: 1.6;">123 Rue de la Sécurité<br>75000 Paris</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="tel:+33123456789" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-phone" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                            +33 1 23 45 67 89
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="mailto:contact@atlaslynx.fr" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-envelope" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                            contact@atlaslynx.fr
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <i class="fas fa-clock" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                        <span style="color: #f5f5f5;">Disponible 24/7</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="copyright" style="text-align: center; padding-top: 20px; border-top: 1px solid #333;">
+                    <p style="color: #f5f5f5; margin: 0; font-size: 0.9rem;">
+                        &copy; 2024 Atlas Lynx Sécurité. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
+<!--==============================
+    Scroll To Top
+==============================-->
+<div class="scroll-top">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+</div>
 
-
-
-
-
-    <!--********************************
-			Code End  Here 
-	******************************** -->
-
-
-    <!-- Scroll To Top -->
-    <div class="scroll-top">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
-        </svg>
-    </div>
-
-
-
-    <!--==============================
+<!--==============================
     All Js File
 ============================== -->
-    <!-- Jquery -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="assets/js/slick.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Magnific Popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!-- Counter Up -->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <!-- Tilt Js -->
-    <script src="assets/js/tilt.jquery.min.js"></script>
-    <!-- Wow Animation -->
-    <script src="assets/js/wow.min.js"></script>
-    <!-- Main Js File -->
-    <script src="assets/js/main.js"></script>
+<!-- Jquery -->
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<!-- Slick Slider -->
+<script src="assets/js/slick.min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Magnific Popup -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<!-- Counter Up -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!-- Tilt Js -->
+<script src="assets/js/tilt.jquery.min.js"></script>
+<!-- Wow Animation -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Main Js File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 

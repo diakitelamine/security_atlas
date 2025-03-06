@@ -49,6 +49,18 @@
         .navbar-black {
             background-color: #000;
         }
+        .navbar-black {
+            background-color: #000 !important;
+        }
+        .sticky-active {
+            background-color: #000 !important;
+        }
+        .header-layout1.sticky-active {
+            background-color: #000 !important;
+        }
+        .main-menu > ul > li > a {
+            color: #fff !important;
+        }
     </style>
 
 </head>
@@ -74,8 +86,8 @@
     <div class="th-menu-wrapper navbar-black">
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-            <div class="header-logo">
-                <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;"></a>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo.jpeg" alt="Atlas lynx SECURITE"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
@@ -87,6 +99,13 @@
                     </li>
                     <li>
                         <a href="service.html">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="surveillance_gardiennage.html">Gardiennage et surveillance humaine</a></li>
+                            <li><a href="incendie.html">Sécurité incendie</a></li>
+                            <li><a href="evenementiel.html">Événementiel et contrôle d'accès</a></li>
+                            <li><a href="protection_rapproche.html">Protection rapprochée</a></li>
+                            <li><a href="mobile.html">Sécurité mobile et interventions rapides</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
@@ -114,7 +133,15 @@
                                     <ul>
                                         <li><a href="index.html">Accueil</a></li>
                                         <li><a href="about.html">A Propos</a></li>
-                                        <li><a href="service.html">Service</a></li>
+                                        <li><a href="service.html">Service</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="surveillance_gardiennage.html">Gardiennage et surveillance humaine</a></li>
+                                                <li><a href="incendie.html">Sécurité incendie</a></li>
+                                                <li><a href="evenementiel.html">Événementiel et contrôle d’accès</a></li>
+                                                <li><a href="protection_rapproche.html">Protection rapprochée</a></li>
+                                                <li><a href="mobile.html">Sécurité mobile et interventions rapides</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -142,128 +169,229 @@
     ==============================-->
     <section class="space">
         <div class="container">
-            <div class="space-bottom">
-                <div class="footer-info-box wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="row gx-0 justify-content-between">
-                        <div class="col-lg-4 col-sm-auto">
-                            <div class="footer-box">
-                                <h6 class="footer-info has-icon">
-                                    <i class="far fa-envelope"></i>
-                                    <a class="link" href="mailto:contact@atlaslynx-securite.fr">contact@atlaslynx-securite.fr</a>
-                                </h6>
+            <div class="space-top" style="padding: 80px 0; background-color: #1a1a1a; font-family: Arial, sans-serif;">
+                <div class="container">
+                    <!-- En-tête -->
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-8 text-center">
+                            <h1 class="text-theme mb-4" style="color: #ffc107; font-size: 2.5rem;">Contactez-nous</h1>
+                            <p class="mb-5" style="color: #f5f5f5; font-size: 1.1rem; line-height: 1.6;">
+                                Notre équipe est disponible 24h/24 et 7j/7 pour répondre à vos besoins en matière de sécurité.
+                                N'hésitez pas à nous contacter pour toute demande de devis ou d'information.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <!-- Informations de contact -->
+                        <div class="col-lg-4 mb-5 mb-lg-0">
+                            <div class="contact-info p-4" style="background-color: #222; border-radius: 10px; height: 100%;">
+                                <h3 class="mb-4" style="color: #ffc107; font-size: 1.5rem;">Nos Coordonnées</h3>
+                                
+                                <div class="info-item mb-4">
+                                    <h5 style="color: #ffc107; font-size: 1.1rem;">
+                                        <i class="fas fa-map-marker-alt me-2"></i>Adresse
+                                    </h5>
+                                    <p style="color: #f5f5f5; margin-left: 25px;">
+                                        01 Avenue de la Forêt<br>
+                                        35340 Liffré, France
+                                    </p>
+                                </div>
+
+                                <div class="info-item mb-4">
+                                    <h5 style="color: #ffc107; font-size: 1.1rem;">
+                                        <i class="fas fa-phone me-2"></i>Téléphone
+                                    </h5>
+                                    <p style="color: #f5f5f5; margin-left: 25px;">
+                                        <a href="tel:+330768922125" style="color: #f5f5f5; text-decoration: none;">+33 7 68 92 21 25</a>
+                                    </p>
+                                </div>
+
+                                <div class="info-item mb-4">
+                                    <h5 style="color: #ffc107; font-size: 1.1rem;">
+                                        <i class="fas fa-envelope me-2"></i>Email
+                                    </h5>
+                                    <p style="color: #f5f5f5; margin-left: 25px;">
+                                        <a href="mailto:contact@atlaslynx-securite.fr" style="color: #f5f5f5; text-decoration: none;">contact@atlaslynx-securite.fr</a>
+                                    </p>
+                                </div>
+
+                                <div class="info-item">
+                                    <h5 style="color: #ffc107; font-size: 1.1rem;">
+                                        <i class="fas fa-clock me-2"></i>Disponibilité
+                                    </h5>
+                                    <p style="color: #f5f5f5; margin-left: 25px;">24h/24, 7j/7</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md order-3 order-md-0">
-                            <div class="footer-box">
-                                <h6 class="footer-info has-icon">
-                                    <i class="far fa-phone"></i>
-                                    <a class="link" href="tel:+07 68 92 21 25">(+33) 07 68 92 21 25</a>
-                                    <a class="link" href="tel:+06 24 12 65 37">(+33) 06 24 12 65 37</a>
-                                </h6>
+
+                        <!-- Formulaire de contact -->
+                        <div class="col-lg-6">
+                            <div class="contact-form p-4" style="background-color: #222; border-radius: 10px;">
+                                <h3 class="mb-4" style="color: #ffc107; font-size: 1.5rem;">Envoyez-nous un message</h3>
+                                
+                                <form action="https://formspree.io/f/mvgglvdd" method="POST" class="contact-form">
+                                    <div class="mb-4">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Adresse Email" required 
+                                            style="background-color: #333; border: none; color: #fff; padding: 12px 15px;">
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <textarea name="message" id="message" rows="5" class="form-control" placeholder="Votre Message" required 
+                                            style="background-color: #333; border: none; color: #fff; padding: 12px 15px; resize: vertical;"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn" 
+                                        style="background-color: #ffc107; color: #000; padding: 12px 30px; border: none; font-weight: 600; width: 100%;">
+                                        Envoyer le message
+                                    </button>
+                                </form>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-auto">
-                            <div class="footer-box">
-                                <h6 class="footer-info has-icon">
-                                    <i class="far fa-location-dot"></i>
-                                    <a class="link" href="https://www.google.com/maps">01 Avenue de la Forêt 35340 Liffré</a>
-                                </h6>
+                    </div>
+
+                    <!-- Carte Google Maps -->
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-12">
+                            <div style="border-radius: 10px; overflow: hidden; height: 400px;">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.4866563458837!2d-1.5113844842335613!3d48.12544207922363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede2d0b5a3727%3A0x2b8b8b8b8b8b8b8b!2s01%20Avenue%20de%20la%20For%C3%AAt%2C%2035340%20Liffr%C3%A9!5e0!3m2!1sfr!2sfr!4v1625147614899!5m2!1sfr!2sfr"
+                                    width="100%" 
+                                    height="400" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-between">
-                <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s">
-                    <h2 class="sec-title mb-45">Contactez-nous</h2>
-                    <form action="https://formspree.io/f/mvgglvdd" method="POST" class="contact-form">
-                        <div class="row">
-                            <div class="form-group col-12">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Adresse Email" required>
-                            </div>
-                            <div class="form-group col-12">
-                                <textarea name="message" id="message" cols="30" rows="5" class="form-control" placeholder="Votre Message" required></textarea>
-                            </div>
-                            <div class="form-btn col-12 mt-10">
-                                <button type="submit" class="th-btn">
-                                    <span class="line left"></span> Envoyer un message <span class="line"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="contact-map">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2672.0235284644733!2d-1.5054777249270632!3d48.20297597561114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480e6f39e635cc3f%3A0x74fd0e3f6d3a5bc0!2s01%20Avenue%20de%20la%20For%C3%AAt%2C%2035340%20Liffr%C3%A9%2C%20France!5e0!3m2!1sen!2sfr!4v1694340238178!5m2!1sen!2sfr"
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </section>
 
-    <footer class="footer-wrapper footer-layout4 navbar-black">
-        <div class="widget-area" style="margin-top: 50px;">
-            <div class="container">
-                <div class="row">
-                    <!-- Services -->
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="widget widget_nav_menu footer-widget style2">
-                            <h3 class="widget_title" style="color: #fff;">Services</h3>
-                            <div class="menu-all-pages-container">
-                                <ul class="menu" style="color: #ccc;">
-                                    <li><a href="surveillance_gardiennage.html" style="color: #ccc;">Gardiennage et surveillance humaine</a></li>
-                                    <li><a href="incendie.html" style="color: #ccc;">Sécurité incendie</a></li>
-                                    <li><a href="evenementiel.html" style="color: #ccc;">Événementiel et contrôle d’accès</a></li>
-                                    <li><a href="protection_rapproche.html" style="color: #ccc;">Protection rapprochée</a></li>
-                                    <li><a href="mobile.html" style="color: #ccc;">Sécurité mobile et interventions rapides</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Contactez-nous -->
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="widget footer-widget style2">
-                            <h3 class="widget_title" style="color: #fff;">Contactez-nous</h3>
-                            <div class="th-widget-contact">
-                                <p style="color: #ccc;">Adresse : 01 Avenue de la Forêt, 35340 Liffré</p>
-                                <p style="color: #ccc;">Téléphone : +(33) 07 68 92 21 25</p>
-                                <p style="color: #ccc;">E-mail : <a href="mailto:contact@atlaslynx-securite.fr" style="color: #007BFF;">contact@atlaslynx-securite.fr</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Entreprise -->
-                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="widget footer-widget style2">
-                            <h3 class="widget_title" style="color: #fff;">Entreprise</h3>
-                            <div class="th-widget-contact">
-                                <p style="color: #ccc;">Siret : 852 708 791 00037</p>
-                                <p style="color: #ccc;">Autorisation : AUT-035-2123-12-03-2024960605</p>
-                                <p style="color: #ccc;">Disponibilité : 24h/24, 7j/7</p>
-                            </div>
-                        </div>
+    <!--==============================
+    Footer Area
+==============================-->
+<footer class="footer-area" style="background-color: #000; color: #f5f5f5; padding: 80px 0 20px; font-family: Arial, sans-serif;">
+    <div class="container">
+        <div class="row justify-content-between">
+            <!-- Company Info -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="footer-info">
+                    <div class="footer-logo mb-4">
+                        <img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;">
                     </div>
                 </div>
             </div>
+
+            <!-- Entreprise -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Entreprise</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">SIRET :</strong><br>
+                        852 708 791 00037
+                    </li>
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">Autorisation :</strong><br>
+                        AUT-035-2123-12-03-2024960605
+                    </li>
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">Disponibilité :</strong><br>
+                        24h/24, 7j/7
+                    </li>
+                </ul>
+                <div class="social-links mt-4">
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="Facebook">
+                        <i class="fab fa-facebook-f" style="color: #ffc107;"></i>
+                    </a>
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="Instagram">
+                        <i class="fab fa-instagram" style="color: #ffc107;"></i>
+                    </a>
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="TikTok">
+                        <i class="fab fa-tiktok" style="color: #ffc107;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services Links -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Services</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">
+                        <a href="surveillance_gardiennage.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Gardiennage et surveillance humaine
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="incendie.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Sécurité incendie
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="evenementiel.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Événementiel et contrôle d'accès
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="protection_rapproche.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Protection rapprochée
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="mobile.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Sécurité mobile et interventions rapides
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Contact</h4>
+                <ul class="footer-contact" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px; display: flex; align-items: start;">
+                        <i class="fas fa-map-marker-alt" style="color: #ffc107; width: 20px; margin-right: 10px; margin-top: 5px;"></i>
+                        <span style="color: #f5f5f5; line-height: 1.6;">123 Rue de la Sécurité<br>75000 Paris</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="tel:+33123456789" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-phone" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                            +33 1 23 45 67 89
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="mailto:contact@atlaslynx.fr" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-envelope" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                            contact@atlaslynx.fr
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <i class="fas fa-clock" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                        <span style="color: #f5f5f5;">Disponible 24/7</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="copyright-wrap" style="background-color: #222; padding: 15px 0; text-align: center; color: #ccc;">
-            <p class="copyright-text">Copyright By © <a href="index.html" style="color: #007BFF;">Atlas Lynx Sécurité</a> - 2024</p>
+
+        <!-- Copyright -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="copyright" style="text-align: center; padding-top: 20px; border-top: 1px solid #333;">
+                    <p style="color: #f5f5f5; margin: 0; font-size: 0.9rem;">
+                        2024 Atlas Lynx Sécurité. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
         </div>
-    </footer>
-    
-
-
-
-    <!--********************************
-			Code End  Here 
-	******************************** -->
-
+    </div>
+</footer>
 
     <!-- Scroll To Top -->
     <div class="scroll-top">
@@ -271,8 +399,6 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
         </svg>
     </div>
-
-
 
     <!--==============================
     All Js File

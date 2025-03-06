@@ -56,6 +56,18 @@
         .navbar-black {
             background-color: #000;
         }
+        .navbar-black {
+            background-color: #000 !important;
+        }
+        .sticky-active {
+            background-color: #000 !important;
+        }
+        .header-layout1.sticky-active {
+            background-color: #000 !important;
+        }
+        .main-menu > ul > li > a {
+            color: #fff !important;
+        }
     </style>
 
 </head>
@@ -96,9 +108,15 @@
             </div>
             <div class="th-mobile-menu">
                 <ul>
-                    <li class="menu-item-has-children">
+                    <li>
                         <a href="index.html">Accueil</a>
-                        
+                        <ul class="sub-menu">
+                            <li><a href="surveillance_gardiennage.html">Gardiennage et surveillance humaine</a></li>
+                            <li><a href="incendie.html">Sécurité incendie</a></li>
+                            <li><a href="evenementiel.html">Événementiel et contrôle d'accès</a></li>
+                            <li><a href="protection_rapproche.html">Protection rapprochée</a></li>
+                            <li><a href="mobile.html">Sécurité mobile et interventions rapides</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="about.html">A propos de nous</a>
@@ -121,7 +139,6 @@
     <header class="th-header navbar-black">
         <div class="sticky-wrapper">
             <div class="sticky-active">
-                <!-- Main Menu Area -->
                 <div class="menu-area">
                     <div class="container">
                         <div class="row align-items-center justify-content-between">
@@ -133,20 +150,18 @@
                             <div class="col-auto">
                                 <nav class="main-menu d-none d-lg-inline-block">
                                     <ul>
-                                        <li class="menu-item-has-children">
-                                            <a href="index.html">Accueil</a>
+                                        <li><a href="index.html">Accueil</a></li>
+                                        <li><a href="about.html">A Propos</a></li>
+                                        <li><a href="service.html">Service</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="surveillance_gardiennage.html">Gardiennage et surveillance humaine</a></li>
+                                                <li><a href="incendie.html">Sécurité incendie</a></li>
+                                                <li><a href="evenementiel.html">Événementiel et contrôle d'accès</a></li>
+                                                <li><a href="protection_rapproche.html">Protection rapprochée</a></li>
+                                                <li><a href="mobile.html">Sécurité mobile et interventions rapides</a></li>
+                                            </ul>
                                         </li>
-                                        <li>
-                                            <a href="about.html">A Propos </a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="service.html">Services</a>
-                                            
-                                        </li>
-                                        
-                                        <li>
-                                            <a href="contact.html">Contact</a>
-                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
                                 <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i class="far fa-bars"></i></button>
@@ -159,18 +174,18 @@
     </header><!--==============================
 Hero Area
 ==============================-->
-<div class="th-hero-wrapper hero-4">
+<div class="th-hero-wrapper hero-4" style="font-family: Arial, sans-serif;">
     <div class="hero-slider-4 th-carousel" id="heroSlide4" data-fade="false" data-slide-show="1">
         <div>
             <div class="th-hero-slide">
                 <div class="th-hero-bg" data-bg-src="assets/img/bg/secu1.jpg" data-overlay="black" data-opacity="6"></div>
                 <div class="container">
                     <div class="hero-style4">
-                        <span class="h4 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s">VOTRE SÉCURITÉ, NOTRE PRIORITÉ</span>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Sécurité Fiable</h1>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">Adaptée à Vos Besoins</h1>
-                        <h1 class="hero-title text-transparent" data-ani="slideinup" data-ani-delay="0.5s">Protection 24/7</h1>
-                        <a href="service.html" class="th-btn" data-ani="slideinup" data-ani-delay="0.7s"><span class="line left"></span> En Savoir Plus <span class="line"></span></a>
+                        <span class="h4 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s" style="font-size: 1.5rem; color: #fff;">VOTRE SÉCURITÉ, NOTRE PRIORITÉ</span>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s" style="font-size: 3.5rem; font-weight: bold; color: #fff;">Sécurité Fiable</h1>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s" style="font-size: 3.5rem; font-weight: bold; color: #fff;">Adaptée à Vos Besoins</h1>
+                        <h1 class="hero-title text-theme" data-ani="slideinup" data-ani-delay="0.5s" style="font-size: 3.5rem; font-weight: bold;">Protection 24/7</h1>
+                        <a href="service.html" class="th-btn mt-4" data-ani="slideinup" data-ani-delay="0.7s"><span class="line left"></span> En Savoir Plus <span class="line"></span></a>
                     </div>
                 </div>
             </div>
@@ -180,320 +195,135 @@ Hero Area
                 <div class="th-hero-bg" data-bg-src="assets/img/bg/secu2.jpg" data-overlay="black" data-opacity="6"></div>
                 <div class="container">
                     <div class="hero-style4">
-                        <span class="h4 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s">VOTRE SÉCURITÉ, NOTRE PRIORITÉ</span>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Fiabilité</h1>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">Sur Laquelle Compter</h1>
-                        <h1 class="hero-title text-transparent" data-ani="slideinup" data-ani-delay="0.5s">Sécuriser l'Avenir</h1>
-                        <a href="about.html" class="th-btn" data-ani="slideinup" data-ani-delay="0.7s"><span class="line left"></span> À Propos <span class="line"></span></a>
+                        <span class="h4 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s" style="font-size: 1.5rem; color: #fff;">VOTRE SÉCURITÉ, NOTRE PRIORITÉ</span>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s" style="font-size: 3.5rem; font-weight: bold; color: #fff;">Fiabilité</h1>
+                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s" style="font-size: 3.5rem; font-weight: bold; color: #fff;">Sur Laquelle Compter</h1>
+                        <h1 class="hero-title text-theme" data-ani="slideinup" data-ani-delay="0.5s" style="font-size: 3.5rem; font-weight: bold;">Sécuriser l'Avenir</h1>
+                        <a href="about.html" class="th-btn mt-4" data-ani="slideinup" data-ani-delay="0.7s"><span class="line left"></span> À Propos <span class="line"></span></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div class="th-hero-slide">
-                <div class="th-hero-bg" data-bg-src="assets/img/bg/secu3.jpg" data-overlay="black" data-opacity="6"></div>
-                <div class="container">
-                    <div class="hero-style4">
-                        <span class="h4 hero-subtitle" data-ani="slideinup" data-ani-delay="0.1s">VOTRE SÉCURITÉ, NOTRE PRIORITÉ</span>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.3s">Sécurité d'Expert</h1>
-                        <h1 class="hero-title" data-ani="slideinup" data-ani-delay="0.5s">Pour Tous Les Besoins</h1>
-                        <h1 class="hero-title text-transparent" data-ani="slideinup" data-ani-delay="0.5s">Sérénité Assurée</h1>
-                        <a href="contact.html" class="th-btn" data-ani="slideinup" data-ani-delay="0.7s"><span class="line left"></span> Nous Contacter <span class="line"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="icon-box">
-        <button data-slick-prev="#heroSlide4" class="slick-arrow default cursor-btn"><i class="fal fa-long-arrow-left"></i></button>
-        <button data-slick-next="#heroSlide4" class="slick-arrow default cursor-btn"><i class="fal fa-long-arrow-right"></i></button>
     </div>
 </div>
 
-
-
-    <!--======== / Hero Section ========--><!--==============================
-Feature Area  
-==============================-->
-<section class="space-top">
-    <div class="container">
-        <div class="row gy-4">
-            <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="feature-card">
-                    <div class="feature-card_icon shape-icon">
-                        <img class="svg-img" src="assets/img/icon/tarif.jpg" alt="icon">
-                    </div>
-                    <h3 class="feature-card_title">Tarifs Compétitifs</h3>
-                    <p class="feature-card_text">Atlas Lynx Sécurité propose des solutions de sécurité privée à des prix raisonnables, adaptées aux besoins spécifiques de chaque client, sans compromis sur la qualité des services.</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="feature-card">
-                    <div class="feature-card_icon shape-icon">
-                        <img class="svg-img" src="assets/img/icon/mesure.jpg" alt="icon">
-                    </div>
-                    <h3 class="feature-card_title">Conception sur Mesure</h3>
-                    <p class="feature-card_text">Nous développons des solutions personnalisées pour protéger efficacement vos locaux, vos biens et vos collaborateurs, en tenant compte des spécificités de votre environnement.</p>
-                </div>
-            </div>
-            <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="feature-card">
-                    <div class="feature-card_icon shape-icon">
-                        <img class="svg-img" src="assets/img/icon/test4.jpg" alt="icon">
-                    </div>
-                    <h3 class="feature-card_title">Gestion d'Experts</h3>
-                    <p class="feature-card_text">Nos équipes expérimentées assurent une gestion optimale des services de sécurité, garantissant réactivité, fiabilité et professionnalisme à chaque étape de notre collaboration.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <!--==============================
-About Area  
+Main Content Area
 ==============================-->
-<!-- <div class="space" id="about-sec">
+<div class="space-top" style="padding-bottom: 50px; font-family: Arial, sans-serif; color: #f5f5f5;">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-xl-6 mb-5 mb-xl-0 wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="img-box1">
-                    <div class="img1">
-                        <img src="assets/img/normal/about_3_1.jpg" alt="About">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Introduction -->
+                <div class="text-center mb-5">
+                    <h1 class="text-theme">Atlas Lynx Sécurité</h1>
+                    <h3 class="text-theme" style="font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; color: #fff;">
+                        Votre Sérénité, <span class="text-theme">Notre Priorité</span>
+                    </h3>
+                    <p class="mb-4" style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
+                        Chez <a href="about.html" class="text-theme" style="text-decoration: none;">Atlas Lynx Sécurité</a>, nous savons que votre sécurité n'est pas une option.
+                        C'est une nécessité.
+                    </p>
+                </div>
+
+                <!-- Notre Expertise -->
+                <div class="mb-5">
+                    <h3 class="text-theme mb-4 text-center">Notre Expertise</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #fff; text-align: center;">
+                        Découvrez notre gamme complète de <a href="service.html" class="text-theme" style="text-decoration: none;">services de sécurité</a> adaptés à vos besoins.
+                        Notre équipe de professionnels qualifiés assure votre protection 24h/24 et 7j/7.
+                    </p>
+                </div>
+
+                <!-- Services -->
+                <div class="row gy-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="service-block p-4" style="background: rgba(0,0,0,0.3); border-radius: 10px;">
+                            <h4 class="text-theme mb-3">Gardiennage et Surveillance</h4>
+                            <ul style="list-style: none; padding-left: 0; color: #fff; font-size: 1.1rem;">
+                                <li>✓ Surveillance 24h/24</li>
+                                <li>✓ Rondes de sécurité</li>
+                                <li>✓ Contrôle d'accès</li>
+                            </ul>
+                            <a href="surveillance_gardiennage.html" class="th-btn mt-3"><span class="line left"></span>Découvrir<span class="line"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-block p-4" style="background: rgba(0,0,0,0.3); border-radius: 10px;">
+                            <h4 class="text-theme mb-3">Sécurité Incendie</h4>
+                            <ul style="list-style: none; padding-left: 0; color: #fff; font-size: 1.1rem;">
+                                <li>✓ Prévention des risques</li>
+                                <li>✓ Intervention rapide</li>
+                                <li>✓ Formation du personnel</li>
+                            </ul>
+                            <a href="incendie.html" class="th-btn mt-3"><span class="line left"></span>Découvrir<span class="line"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-block p-4" style="background: rgba(0,0,0,0.3); border-radius: 10px;">
+                            <h4 class="text-theme mb-3">Événementiel</h4>
+                            <ul style="list-style: none; padding-left: 0; color: #fff; font-size: 1.1rem;">
+                                <li>✓ Gestion des accès</li>
+                                <li>✓ Sécurité des événements</li>
+                                <li>✓ Protection du public</li>
+                            </ul>
+                            <a href="evenementiel.html" class="th-btn mt-3"><span class="line left"></span>Découvrir<span class="line"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="service-block p-4" style="background: rgba(0,0,0,0.3); border-radius: 10px;">
+                            <h4 class="text-theme mb-3">Protection Rapprochée</h4>
+                            <ul style="list-style: none; padding-left: 0; color: #fff; font-size: 1.1rem;">
+                                <li>✓ Protection VIP</li>
+                                <li>✓ Agents qualifiés</li>
+                                <li>✓ Service sur mesure</li>
+                            </ul>
+                            <a href="protection_rapproche.html" class="th-btn mt-3"><span class="line left"></span>Découvrir<span class="line"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pourquoi Nous Choisir -->
+                <div class="mb-5 text-center">
+                    <h3 class="text-theme mb-4">Pourquoi Nous Choisir ?</h3>
+                    <div class="row gy-3">
+                        <div class="col-md-4">
+                            <div class="p-3">
+                                <h5 class="text-theme">Expertise</h5>
+                                <p style="color: #fff; font-size: 1.1rem;">Professionnels hautement qualifiés</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3">
+                                <h5 class="text-theme">Disponibilité</h5>
+                                <p style="color: #fff; font-size: 1.1rem;">Service 24h/24, 7j/7</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3">
+                                <h5 class="text-theme">Sur Mesure</h5>
+                                <p style="color: #fff; font-size: 1.1rem;">Solutions adaptées à vos besoins</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="text-center mt-5">
+                    <h3 class="text-theme mb-4">Besoin de nos Services ?</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #fff;">
+                        Contactez-nous pour une consultation personnalisée et découvrez comment nous pouvons assurer votre sécurité.
+                    </p>
+                    <div class="mt-4">
+                        <a href="contact.html" class="th-btn"><span class="line left"></span>Nous Contacter<span class="line"></span></a>
+                        <a href="about.html" class="th-btn ms-3"><span class="line left"></span>En Savoir Plus<span class="line"></span></a>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                <p class="sub-title">Atlas Lynx Sécurité</p>
-                <h2 class="sec-title mb-40">À Propos de <span class="text-transparent">Nous</span></h2>
-                <p class="mb-30">Atlas Lynx Sécurité est une entreprise de sécurité privée reconnue pour son expertise et son engagement à fournir des services de qualité supérieure. Nous offrons des solutions innovantes et fiables pour répondre aux besoins variés de nos clients.</p>
-                <p class="mb-40">Avec une gestion professionnelle et des équipes expérimentées, nous garantissons une sécurité optimale pour vos biens, vos collaborateurs et vos locaux, tout en assurant une grande flexibilité dans nos services.</p>
-                <a href="about.html" class="th-btn"><span class="line left"></span> En Savoir Plus <span class="line"></span></a>
-            </div>
         </div>
     </div>
-    <div class="shape-mockup jump" data-top="0" data-right="0"><img src="assets/img/shape/shape_3.png" alt="shape"></div>
-</div> -->
+</div>
 <!--==============================
-
-
-Service Area  
-==============================-->
-<section class="overflow-hidden space">
-    <div class="container">
-        <div class="row justify-content-lg-between align-items-end">
-            <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="title-area">
-                    <h2 class="sec-title">Services de Sécurité de Haute Qualité
-                        <span class="text-transparent">sur Mesure</span>
-                    </h2>
-                </div>
-            </div>
-            <div class="col-auto mt-n4 mt-lg-0 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="sec-btn">
-                    <a href="service.html" class="link-btn">Voir tous les Services</a>
-                </div>
-            </div>
-        </div>
-        <div class="service-grid-area">
-            <div class="service-list-slide">
-                <button data-slick-prev="#sr-list" class="slick-btn top"><i class="fal fa-chevron-up"></i></button>
-                <div class="th-carousel" id="sr-list" data-slide-show="4" data-lg-slide-show="4" data-md-slide-show="4" data-sm-slide-show="4" data-xs-slide-show="4" data-vertical="true" data-verticalSwiping="true" data-asnavfor="#sr-grid, #sr-img">
-                    <div>
-                        <div class="service-list">
-                            <span class="service-list_number">01</span>
-                            <h4 class="service-list_title">Gardiennage et surveillance humaine</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-list">
-                            <span class="service-list_number">02</span>
-                            <h4 class="service-list_title">Sécurité incendie</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-list">
-                            <span class="service-list_number">03</span>
-                            <h4 class="service-list_title">Événementiel et contrôle d’accès</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-list">
-                            <span class="service-list_number">04</span>
-                            <h4 class="service-list_title">Protection rapprochée</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-list">
-                            <span class="service-list_number">05</span>
-                            <h4 class="service-list_title">Sécurité mobile et interventions rapides</h4>
-                        </div>
-                    </div>
-                </div>
-                <button data-slick-next="#sr-list" class="slick-btn bottom"><i class="fal fa-chevron-down"></i></button>
-            </div>
-            <div class="service-grid-slide">
-                <div class="th-carousel" id="sr-grid" data-slide-show="1" data-md-slide-show="1" data-asnavfor="#sr-list, #sr-img">
-                    <div>
-                        <div class="service-card style2">
-                            <!-- <div class="service-card_icon">
-                                <img class="svg-img" src="assets/img/icon/gardiennage.jpg" alt="service image">
-                            </div> -->
-                            <p class="service-card_num text-transparent">01</p>
-                            <h3 class="service-card_title">Gardiennage et surveillance humaine</h3>
-                            <p class="service-card_text">Services professionnels pour garantir la sécurité 24/7.</p>
-                            <a href="surveillance_gardiennage.html" class="link-btn">Voir Détails</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-card style2">
-                            <!-- <div class="service-card_icon">
-                                <img class="svg-img" src="assets/img/icon/incendie.jpg" alt="service image">
-                            </div> -->
-                            <p class="service-card_num text-transparent">02</p>
-                            <h3 class="service-card_title">Sécurité incendie</h3>
-                            <p class="service-card_text">Prévention et intervention en cas de risques incendie.</p>
-                            <a href="incendie.html" class="link-btn">Voir Détails</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-card style2">
-                            <!-- <div class="service-card_icon">
-                                <img class="svg-img" src="assets/img/icon/evenementiel.jpg" alt="service image">
-                            </div> -->
-                            <p class="service-card_num text-transparent">03</p>
-                            <h3 class="service-card_title">Événementiel et contrôle d’accès</h3>
-                            <p class="service-card_text">Gestion des accès et sécurité des événements.</p>
-                            <a href="evenementiel.html" class="link-btn">Voir Détails</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-card style2">
-                            <!-- <div class="service-card_icon">
-                                <img class="svg-img" src="assets/img/icon/garde.jpg" alt="service image">
-                            </div> -->
-                            <p class="service-card_num text-transparent">04</p>
-                            <h3 class="service-card_title">Protection rapprochée</h3>
-                            <p class="service-card_text">Protection personnalisée pour vos VIP.</p>
-                            <a href="protection_rapproche.html" class="link-btn">Voir Détails</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="service-card style2">
-                            <!-- <div class="service-card_icon">
-                                <img class="svg-img" src="assets/img/icon/mobile.jpg" alt="service image">
-                            </div> -->
-                            <p class="service-card_num text-transparent">05</p>
-                            <h3 class="service-card_title">Sécurité mobile et interventions rapides</h3>
-                            <p class="service-card_text">Patrouilles mobiles et interventions en urgence.</p>
-                            <a href="mobile.html" class="link-btn">Voir Détails</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="service-grid-img">
-                <div class="th-carousel" id="sr-img" data-slide-show="1" data-md-slide-show="1" data-asnavfor="#sr-grid, #sr-list">
-                    <div>
-                        <div class="img">
-                            <img src="assets/img/icon/gardiennage.jpg" alt="service Image">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="assets/img/icon/incendie.jpg" alt="service Image">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="assets/img/icon/evenementiel.jpg" alt="service Image">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="assets/img/icon/garde.jpg" alt="service Image">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="assets/img/icon/mobile.jpg" alt="service Image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--==============================
-Team Area  
-==============================-->
-<section class="space">
-    <div class="container">
-        <h2 class="sec-title text-center mb-1 wow fadeInUp" data-wow-delay="0.2s">Membres <span class="text-transparent">Experts</span></h2>
-        <div class="row th-carousel" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="2">
-            <!-- Single Item -->
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="team-card">
-                    <p class="team-desig">Chef de Sécurité</p>
-                    <h3 class="h5 team-title"><a href="team-details.html">Jean Dupont</a></h3>
-                    <div class="th-social">
-                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="team-img">
-                        <img src="assets/img/team/chef.jpg" alt="Team">
-                    </div>
-                </div>
-            </div>
-            <!-- Single Item -->
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-card">
-                    <p class="team-desig">Analyste de Risques</p>
-                    <h3 class="h5 team-title"><a href="team-details.html">Claire Moreau</a></h3>
-                    <div class="th-social">
-                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="team-img">
-                        <img src="assets/img/team/analyste.jpg" alt="Team">
-                    </div>
-                </div>
-            </div>
-            <!-- Single Item -->
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="team-card">
-                    <p class="team-desig">Expert en Surveillance</p>
-                    <h3 class="h5 team-title"><a href="team-details.html">Paul Durand</a></h3>
-                    <div class="th-social">
-                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="team-img">
-                        <img src="assets/img/team/expert.jpg" alt="Team">
-                    </div>
-                </div>
-            </div>
-            <!-- Single Item -->
-            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-card">
-                    <p class="team-desig">Responsable Opérations</p>
-                    <h3 class="h5 team-title"><a href="team-details.html">Sophie Martin</a></h3>
-                    <div class="th-social">
-                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="team-img">
-                        <img src="assets/img/team/operation.jpg" alt="Team">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   </section>
-
-    <!--==============================
 Testimonial Area  
 ==============================-->
     <div class=" ">
@@ -544,54 +374,123 @@ Blog Area
 <!--==============================
 Footer Area
 ==============================-->
-<footer class="footer-wrapper footer-layout4 navbar-black">
-    <div class="widget-area" style="margin-top: 50px;">
-        <div class="container">
-            <div class="row">
-                <!-- Services -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="widget widget_nav_menu footer-widget style2">
-                        <h3 class="widget_title" style="color: #fff;">Services</h3>
-                        <div class="menu-all-pages-container">
-                            <ul class="menu" style="color: #ccc;">
-                                <li><a href="surveillance_gardiennage.html" style="color: #ccc;">Gardiennage et surveillance humaine</a></li>
-                                <li><a href="incendie.html" style="color: #ccc;">Sécurité incendie</a></li>
-                                <li><a href="evenementiel.html" style="color: #ccc;">Événementiel et contrôle d’accès</a></li>
-                                <li><a href="protection_rapproche.html" style="color: #ccc;">Protection rapprochée</a></li>
-                                <li><a href="mobile.html" style="color: #ccc;">Sécurité mobile et interventions rapides</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Contactez-nous -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="widget footer-widget style2">
-                        <h3 class="widget_title" style="color: #fff;">Contactez-nous</h3>
-                        <div class="th-widget-contact">
-                            <p style="color: #ccc;">Adresse : 01 Avenue de la Forêt, 35340 Liffré</p>
-                            <p style="color: #ccc;">Téléphone : +(33) 07 68 92 21 25</p>
-                            <p style="color: #ccc;">E-mail : <a href="mailto:contact@atlaslynx-securite.fr" style="color: #007BFF;">contact@atlaslynx-securite.fr</a></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Entreprise -->
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="widget footer-widget style2">
-                        <h3 class="widget_title" style="color: #fff;">Entreprise</h3>
-                        <div class="th-widget-contact">
-                            <p style="color: #ccc;">Siret : 852 708 791 00037</p>
-                            <p style="color: #ccc;">Autorisation : AUT-035-2123-12-03-2024960605</p>
-                            <p style="color: #ccc;">Disponibilité : 24h/24, 7j/7</p>
-                        </div>
+<footer class="footer-area" style="background-color: #000; color: #f5f5f5; padding: 80px 0 20px; font-family: Arial, sans-serif;">
+    <div class="container">
+        <div class="row justify-content-between">
+            <!-- Company Info -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="footer-info">
+                    <div class="footer-logo mb-4">
+                        <img src="assets/img/logo.jpeg" alt="Atlas Lynx Sécurité" style="width: 200px; height: auto;">
                     </div>
                 </div>
             </div>
+
+            <!-- Entreprise -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Entreprise</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">SIRET :</strong><br>
+                        852 708 791 00037
+                    </li>
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">Autorisation :</strong><br>
+                        AUT-035-2123-12-03-2024960605
+                    </li>
+                    <li style="margin-bottom: 12px; color: #f5f5f5;">
+                        <strong style="color: #ffc107;">Disponibilité :</strong><br>
+                        24h/24, 7j/7
+                    </li>
+                </ul>
+                <div class="social-links mt-4">
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="Facebook">
+                        <i class="fab fa-facebook-f" style="color: #ffc107;"></i>
+                    </a>
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="Instagram">
+                        <i class="fab fa-instagram" style="color: #ffc107;"></i>
+                    </a>
+                    <a href="#" style="color: #f5f5f5; text-decoration: none;" title="TikTok">
+                        <i class="fab fa-tiktok" style="color: #ffc107;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Services Links -->
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Services</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px;">
+                        <a href="surveillance_gardiennage.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Gardiennage et surveillance humaine
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="incendie.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Sécurité incendie
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="evenementiel.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Événementiel et contrôle d'accès
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="protection_rapproche.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Protection rapprochée
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 12px;">
+                        <a href="mobile.html" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-chevron-right" style="color: #ffc107; font-size: 0.8rem; margin-right: 10px;"></i>
+                            Sécurité mobile et interventions rapides
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3">
+                <h4 class="footer-title" style="color: #ffc107; font-size: 1.4rem; margin-bottom: 25px; font-weight: 600;">Contact</h4>
+                <ul class="footer-contact" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px; display: flex; align-items: start;">
+                        <i class="fas fa-map-marker-alt" style="color: #ffc107; width: 20px; margin-right: 10px; margin-top: 5px;"></i>
+                        <span style="color: #f5f5f5; line-height: 1.6;">123 Rue de la Sécurité<br>75000 Paris</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="tel:+33123456789" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-phone" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                            +33 1 23 45 67 89
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <a href="mailto:contact@atlaslynx.fr" style="color: #f5f5f5; text-decoration: none; transition: all 0.3s ease; display: flex; align-items: center;">
+                            <i class="fas fa-envelope" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                            contact@atlaslynx.fr
+                        </a>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; align-items: center;">
+                        <i class="fas fa-clock" style="color: #ffc107; width: 20px; margin-right: 10px;"></i>
+                        <span style="color: #f5f5f5;">Disponible 24/7</span>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="copyright-wrap" style="background-color: #222; padding: 15px 0; text-align: center; color: #ccc;">
-        <p class="copyright-text">Copyright By © <a href="index.html" style="color: #007BFF;">Atlas Lynx Sécurité</a> - 2024</p>
+
+        <!-- Copyright -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="copyright" style="text-align: center; padding-top: 20px; border-top: 1px solid #333;">
+                    <p style="color: #f5f5f5; margin: 0; font-size: 0.9rem;">
+                        2024 Atlas Lynx Sécurité. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </footer>
 
